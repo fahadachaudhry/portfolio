@@ -1,0 +1,83 @@
+$primary: #6200ff;
+$light: #FFFFFF;
+$selection: #FFDC00;
+
+$selection-color: #FFFFFF;
+$body-color: #131313;
+$body-background-color: #FFFFFF;
+
+// // DARK MODE VARIABLES
+// $selection-color: #131313;
+// $body-color: #FFFFFF;
+// $body-background-color: #131313;
+
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-color: $body-background-color;
+  color: $body-color;
+  transition: 0.25s all;
+}
+
+.height-100vh {
+  min-height: 100vh;
+}
+
+::-moz-selection {
+  background: $selection;
+  color: $selection-color;
+}
+
+::selection {
+  background: $selection;
+  color: $selection-color;
+}
+
+a {
+  padding: 4px;
+  border-radius: 4px;
+  color: $primary;
+  transition: 0.1s all;
+  &:hover {
+    text-decoration: none;
+    color: $light;
+    background-color: $primary;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.intro {
+  font-size: 26px;
+}
+
+.main-heading {
+  color: $primary;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.project-tags li {
+  transition: 0.1s all;
+  font-size: 14px;
+  display: inline;
+  padding: 6px;
+  border: 1px solid $primary;
+  color: $primary;
+  margin-right: 8px;
+  border-radius: 4px;
+  &:hover {
+    background-color: $primary;
+    color: $light;
+  }
+}
