@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://github.com/fahadachaudhry/portfolio",
+  "homepage": "https://fahadachaudhry.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +16,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-particles-js": "^3.4.1",
     "react-scripts": "4.0.3",
     "typescript": "^4.2.3",
     "web-vitals": "^1.1.1"
@@ -26,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"    
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -8,8 +8,8 @@ const Projects = () => {
   return (
     <Container className="pt-5 pb-5">
       <Row>
-        <Col lg={2} className="main-heading"><h5>Other Projects</h5></Col>
-        <Col lg={10}>
+        <Col md={2} className="main-heading"><h5>Other Projects</h5></Col>
+        <Col md={10}>
           {profileData.projects?.map((item) => (
             <div className="pb-4">
               <h6 className="text-bold">

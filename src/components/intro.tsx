@@ -9,10 +9,10 @@ const Intro = () => {
   return (
     <Container className="height-100vh d-flex align-items-center intro">
       <Row className="align-items-center">
-        <Col lg={3}>
+        <Col md={3}>
           <img src={avatar} alt="avatar" className="w-100 shadow-lg rounded" />
         </Col>
-        <Col lg={8}>
+        <Col md={8}>
           <div className="pt-5 pb-5">
             <p className="pb-2">Hello! 👋🏼</p>
             <p className="pb-2">
