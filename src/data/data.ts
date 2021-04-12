@@ -1,16 +1,16 @@
 /* eslint-disable max-len */
-interface ISocial{
+export interface ISocial{
   name: string;
   url: string;
 }
 
-interface ICertification{
+export interface ICertification{
   name: string;
   issuedBy: string;
   verificationURL: string;
 }
 
-interface IProject{
+export interface IProject{
   name: string;
   companyName: string;
   url: string;
@@ -18,18 +18,18 @@ interface IProject{
   tags: string[];
 }
 
-// interface IDate{
+// export interface IDate{
 //   day: string;
 //   month: string;
 //   year: string;
 // }
 
-// interface IDateRange{
+// export interface IDateRange{
 //   startDate: IDate;
 //   endDate: IDate;
 // }
 
-interface IExperience{
+export interface IExperience{
   companyName: string;
   endDate: string;
   position: string;
@@ -38,7 +38,7 @@ interface IExperience{
   website: string;
 }
 
-interface ISkill{
+export interface ISkill{
   languages: string[];
   frameworks: string[];
   tools: string[];
@@ -46,14 +46,21 @@ interface ISkill{
   devtools: string[];
 }
 
-interface IProfile{
+export interface IStudent{
+  avatar: string;
+  name: string;
+  quote: string;
+}
+
+export interface IProfile{
   name: string;
   intro: string;
+  skills?: ISkill;
   phone: string;
   email: string;
   socials: ISocial[];
   bio: string[];
-  skills?: ISkill;
+  students?: IStudent[];
   experiences?: IExperience[];
   certifications?: ICertification[];
   projects?: IProject[];
@@ -62,6 +69,33 @@ interface IProfile{
 const profile : IProfile = {
   name: 'Shahzada Fahad Ashraf',
   intro: 'Pro Bono Programming Career Consultant and Full Stack Developer',
+  students: [
+    {
+      name: 'Awais Zafar',
+      avatar: 'https://media-exp1.licdn.com/dms/image/C5103AQHNewoR5FzCaQ/profile-displayphoto-shrink_400_400/0/1587200960601?e=1623888000&v=beta&t=mquh0pdkolkg1VWbpkIKU2BlskgnfJSyNhTxyowWVU8',
+      quote: 'Learning to crawl, walk, run and fly.',
+    },
+    {
+      name: 'Umair Zafar',
+      avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQEnZr7IWnstyQ/profile-displayphoto-shrink_400_400/0/1615956840787?e=1623888000&v=beta&t=HtxlJheHPxhmfW9J0M7gxlzDcG0yAtsuKcmPWBjxNCY',
+      quote: 'Mechanical Engineer turned Front-End Engineer',
+    },
+    {
+      name: 'Muhammad Naeem Shahzad',
+      avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQEpvSpnRoE2fQ/profile-displayphoto-shrink_400_400/0/1615923251107?e=1623888000&v=beta&t=zMxgT_UcKU8T_S-bcV1pgwEtuCybrwQGmbssd5NZY-A',
+      quote: 'Front-End Developer at Uncle Fixer',
+    },
+    {
+      name: 'Ahmad Muzzafar',
+      avatar: 'https://media-exp1.licdn.com/dms/image/C4D35AQHfBlekgGaw2A/profile-framedphoto-shrink_400_400/0/1614669344736?e=1618326000&v=beta&t=yz0shQUwT6XlIB6u7_ufeGk4uyI8u6MBi9ETnyIU5S8',
+      quote: 'Learning to crawl, walk, run and fly.',
+    },
+    {
+      name: 'Muhammad Shahzeb',
+      avatar: '',
+      quote: 'Learning to crawl, walk, run and fly.',
+    },
+  ],
   phone: '+923249496639',
   socials: [
     {
@@ -145,7 +179,7 @@ const profile : IProfile = {
       endDate: '2015-10-31',
       position: 'Graphic Designer',
       startDate: '2015-07-31',
-      summary: 'At Trequant, my job was to create the interface for their Bio-tech prototype - which consisted of a wrist-watch. Also, my job was to make designs for their Social Media Marketing campaign and for their website.',
+      summary: 'At Trequant, my job was to create the export interface for their Bio-tech prototype - which consisted of a wrist-watch. Also, my job was to make designs for their Social Media Marketing campaign and for their website.',
       website: 'https://www.linkedin.com/company/plan9---pitbs-tech-incubator/',
     },
     {
@@ -188,7 +222,7 @@ const profile : IProfile = {
       companyName: 'CureMD Research and Development',
       url: '',
       description: ['I have proposed and successfully developed the following projects as personal innovative suggestions at CureMD Research & Development:',
-        '1. Revamping the referrals module by User Interface reusability/flexibility and limiting the content flow on screen for the user to avoid overcrowdedness of information.',
+        '1. Revamping the referrals module by User export interface reusability/flexibility and limiting the content flow on screen for the user to avoid overcrowdedness of information.',
         '2. Users prompt reduction to enhance interruption-free user experience in the Superbill module.',
         '3. Development of a dashboard to resolve client requests(L3s) at a decreased SLA.',
       ],

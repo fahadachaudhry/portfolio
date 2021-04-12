@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import avatar from '../assets/images/avatar.jpeg';
 import getProfileData from '../data/data';
+import Testimonial from './Testimonial';
 
 const Intro = () => {
   const profileData = getProfileData();
@@ -10,10 +11,10 @@ const Intro = () => {
     <Container className="height-100vh d-flex align-items-center intro">
       <Row className="align-items-center">
         <Col md={3}>
-          <img src={avatar} alt="avatar" className="w-100 shadow-lg rounded" />
+          <img src={avatar} alt="avatar" className="shadow-lg rounded w-100" />
         </Col>
-        <Col md={8}>
-          <div className="pt-5 pb-5">
+        <Col md={6}>
+          <div className="p-5">
             <p className="pb-2">Hello! 👋🏼</p>
             <p className="pb-2">
               I&apos;m
@@ -24,12 +25,15 @@ const Intro = () => {
             </p>
             <p>
               Get in touch
-              {' 👉🏼 '}
+              {' 📧 '}
               <a target="_blank" href={`mailto:${profileData.email}`} rel="noreferrer">
                 {profileData.email}
               </a>
             </p>
           </div>
+        </Col>
+        <Col lg={3}>
+          <Testimonial />
         </Col>
       </Row>
     </Container>

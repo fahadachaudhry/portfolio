@@ -1,16 +1,21 @@
 $primary: #6200ff;
 $secondary: #8b46fa;
 $light: #FFFFFF;
+$dark: #131313;
 $selection: #FFDC00;
 
 $selection-color: #131313;
 $body-color: #131313;
 $body-background-color: #FFFFFF;
+$card-gradient-1: #8b46fa;
+$card-gradient-2: rgba(#6200ff, 0.2);
 
-// // DARK MODE VARIABLES
+// DARK MODE VARIABLES
 // $selection-color: #131313;
 // $body-color: #FFFFFF;
 // $body-background-color: #131313;
+// $card-gradient-1: #8b46fa;
+// $card-gradient-2: rgba(#6200ff, 0.2);
 
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
@@ -22,7 +27,7 @@ body {
   letter-spacing: 1px;
   background-color: $body-background-color;
   color: $body-color;
-  transition: 0.25s all;
+  transition: 0.5s all;
 }
 
 .height-100vh {
@@ -91,4 +96,60 @@ ul {
   border: 1px solid $primary;
   padding: 8px;
   font-size: 14px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  margin-top: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  transition: 0.25s all;
+  background-color: $light;
+  color: $primary;
+  &:hover{
+    color: $primary;
+    background-color: $light;
+  }
+  &:focus{
+    color: $primary;
+  }
+}
+.carousel-indicators{
+  margin-bottom: 10px;
+  li{
+    background-color: $light;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+  }
+}
+
+.testimonial{
+  background: $primary;
+background: -webkit-linear-gradient(to bottom, $card-gradient-1, rgba($card-gradient-2, 0.8));
+background: linear-gradient(to bottom, $card-gradient-1, rgba($card-gradient-2, 0.8));
+
+  border-radius: 8px;
+}
+
+.testimonial-heading{
+  font-size: 16px;
+}
+
+.testimonial-card{
+  color: $light;
+  height: 220px;
+  .name{
+    font-size: 16px;
+  }
+  .quote{
+    font-size: 14px;
+  }
+  .avatar{
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border-radius: 100%;
+  }
 }
