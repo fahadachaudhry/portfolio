@@ -9,7 +9,9 @@ const Background = () => {
     <Container className="pt-5 pb-5">
       <Row>
         <Col md={2} className="main-heading"><h5>Background</h5></Col>
-        <Col md={10}>{profileData.bio.map((item) => (<p>{item}</p>))}</Col>
+        <Col md={10}>
+          {profileData.bio.map((item) => (<p>{item}</p>))}
+        </Col>
       </Row>
     </Container>
   );
