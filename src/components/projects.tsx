@@ -12,12 +12,26 @@ const Projects = () => {
         <Col md={10}>
           {profileData.projects?.map((item) => (
             <div className="pb-4">
-              <h6 className="text-bold">
-                {item.name}
-                <a href={item.url} className="p-2">👉🏼</a>
-              </h6>
-              <p>{item.description}</p>
-              <ul className="project-tags">{item.tags.map((tag) => (<li>{tag}</li>))}</ul>
+              <div className="d-flex align-items-center justify-content-between">
+                <h6 className="text-bold">{item.name}</h6>
+                <ul className="project-tags">
+                  {item.tags.map((tag, index) => (
+                    <li>
+                      {tag}
+                      {index !== item.tags.length - 1 ? ', ' : ''}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {item.companyName !== ''
+              && <p>{item.companyName}</p>}
+              {item.description.map((desc) => (<p>{desc}</p>))}
+              {item.url !== ''
+              && (
+                <a target="_blank" href={item.url} className="btn-custom" rel="noreferrer">
+                  Visit
+                </a>
+              )}
             </div>
           ))}
         </Col>

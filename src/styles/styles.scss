@@ -1,8 +1,9 @@
 $primary: #6200ff;
+$secondary: #8b46fa;
 $light: #FFFFFF;
 $selection: #FFDC00;
 
-$selection-color: #FFFFFF;
+$selection-color: #131313;
 $body-color: #131313;
 $body-background-color: #FFFFFF;
 
@@ -41,12 +42,26 @@ body {
 a {
   padding: 4px;
   border-radius: 4px;
-  color: $primary;
+  color: $light;
+  background-color: $secondary;
   transition: 0.1s all;
   &:hover {
     text-decoration: none;
     color: $light;
     background-color: $primary;
+  }
+}
+
+.footer-link{
+  margin-left: 20px;
+  display: inline;
+  a{
+    color: $primary;
+    background-color: transparent !important;
+    &:hover {
+      text-decoration: underline;
+      color: $primary;
+    }
   }
 }
 
@@ -68,16 +83,12 @@ ul {
 }
 
 .project-tags li {
-  transition: 0.1s all;
-  font-size: 14px;
   display: inline;
-  padding: 6px;
+  text-transform: capitalize;
+}
+
+.btn-custom{
   border: 1px solid $primary;
-  color: $primary;
-  margin-right: 8px;
-  border-radius: 4px;
-  &:hover {
-    background-color: $primary;
-    color: $light;
-  }
+  padding: 8px;
+  font-size: 14px;
 }

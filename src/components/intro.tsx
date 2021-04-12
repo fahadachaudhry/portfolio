@@ -25,7 +25,7 @@ const Intro = () => {
             <p>
               Get in touch
               {' 👉🏼 '}
-              <a href={`mailto:${profileData.email}`}>
+              <a target="_blank" href={`mailto:${profileData.email}`} rel="noreferrer">
                 {profileData.email}
               </a>
             </p>

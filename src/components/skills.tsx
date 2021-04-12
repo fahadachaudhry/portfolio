@@ -33,6 +33,12 @@ const Skills = () => {
             {profileData.skills?.design.map((item) => (<li>{item}</li>))}
           </ul>
         </Col>
+        <Col md={2} className="mb-2">
+          <h6 className="pb-4 text-bold">DEVTOOLS</h6>
+          <ul>
+            {profileData.skills?.devtools.map((item) => (<li>{item}</li>))}
+          </ul>
+        </Col>
       </Row>
     </Container>
   );

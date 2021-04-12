@@ -1,26 +1,41 @@
 /* eslint-disable max-len */
-interface IProject{
+interface ISocial{
   name: string;
   url: string;
-  description: string;
+}
+
+interface ICertification{
+  name: string;
+  issuedBy: string;
+  verificationURL: string;
+}
+
+interface IProject{
+  name: string;
+  companyName: string;
+  url: string;
+  description: string[];
   tags: string[];
 }
 
-interface IDate{
-  day: string;
-  month: string;
-  year: string;
-}
+// interface IDate{
+//   day: string;
+//   month: string;
+//   year: string;
+// }
 
-interface IDateRange{
-  startDate: IDate;
-  endDate: IDate;
-}
+// interface IDateRange{
+//   startDate: IDate;
+//   endDate: IDate;
+// }
 
 interface IExperience{
   companyName: string;
-  designation: string;
-  duration: IDateRange;
+  endDate: string;
+  position: string;
+  startDate: string;
+  summary: string;
+  website: string;
 }
 
 interface ISkill{
@@ -28,21 +43,44 @@ interface ISkill{
   frameworks: string[];
   tools: string[];
   design: string[];
+  devtools: string[];
 }
 
 interface IProfile{
   name: string;
   intro: string;
+  phone: string;
   email: string;
+  socials: ISocial[];
   bio: string[];
   skills?: ISkill;
   experiences?: IExperience[];
+  certifications?: ICertification[];
   projects?: IProject[];
 }
 
 const profile : IProfile = {
   name: 'Shahzada Fahad Ashraf',
   intro: 'Pro Bono Programming Career Consultant and Full Stack Developer',
+  phone: '+923249496639',
+  socials: [
+    {
+      name: 'LinkedIn',
+      url: 'http://www.behance.com/fahadachaudhry',
+    },
+    {
+      name: 'Github',
+      url: 'http://www.github.com/fahadachaudhry',
+    },
+    {
+      name: 'Instagram',
+      url: 'http://www.instagram.com/fahadachaudhry',
+    },
+    {
+      name: 'Twitter',
+      url: 'http://www.twitter.com/fahadachaudhry',
+    },
+  ],
   email: 'sh.fahadashraf@gmail.com',
   bio: ['I am a Software Engineer, Designer, and Web Developer currently living in Lahore, Pakistan.',
     'My interests range from UI/UX Designing to Web Development.'],
@@ -51,85 +89,117 @@ const profile : IProfile = {
     frameworks: ['React', '.NET'],
     tools: ['Git', 'Postman', 'Chrome DevTools'],
     design: ['Figma', 'Sketch', 'Adobe Photoshop', 'Adobe Illustrator'],
+    devtools: ['VSCode', 'Visual Studio', 'Webstorm'],
   },
   experiences: [
     {
       companyName: 'Conrad Labs',
-      designation: 'Full Stack Developer',
-      duration: {
-        startDate: {
-          day: '',
-          month: 'May',
-          year: '2020',
-        },
-        endDate: {
-          day: '',
-          month: '',
-          year: 'Present',
-        },
-      },
+      endDate: '',
+      position: 'Software Engineer',
+      startDate: '2020-05-31',
+      summary: 'Conrad Labs is a company that helps startups breathe a technological life into their idea!\n\nMy responsibilities include:\n1. Engaging with the client to gather and analyze requirements. \n2. Actively indulge in Application Infrastructure Design and Development.',
+      website: 'https://www.linkedin.com/company/conrad-labs/',
     },
     {
-      companyName: 'CureMD Research & Development',
-      designation: 'Software Engineer',
-      duration: {
-        startDate: {
-          day: '',
-          month: 'July',
-          year: '2017',
-        },
-        endDate: {
-          day: '',
-          month: 'May',
-          year: '2020',
-        },
-      },
+      companyName: 'CureMD Research and Development',
+      endDate: '2020-05-31',
+      position: 'Software Engineer (Full Stack .NET Developer)',
+      startDate: '2017-08-31',
+      summary: 'CureMD is a Cloud-based EHR, EMR, and Medical Billing Solution for the United States Medical System.\n\nAs a Software Engineer at CureMD, I served in development and support roles for Billing, Reports, Problem lists, and Referrals Modules.',
+      website: 'https://www.linkedin.com/company/curemd/',
+    },
+    {
+      companyName: 'CureMD Research and Development',
+      endDate: '2018-07-31',
+      position: 'Assistant Software Engineer',
+      startDate: '2017-08-31',
+      summary: 'While working as an Assistant Software Engineer, my responsibilities included the Platform-independence of Reports module in cross-browser environments by converting ASP Classic pages to ASP .NET Web Forms & VB Scripts to JavaScript/JQuery.',
+      website: 'https://www.linkedin.com/company/curemd/',
     },
     {
       companyName: 'PUCIT - ACM Student Chapter',
-      designation: 'Graphic Designer',
-      duration: {
-        startDate: {
-          day: '',
-          month: '',
-          year: '2015',
-        },
-        endDate: {
-          day: '',
-          month: '',
-          year: '2017',
-        },
-      },
+      endDate: '2017-12-31',
+      position: 'Lead Developer',
+      startDate: '2016-12-31',
+      summary: 'Acting as a Lead Developer, my job was to supervise the creation and maintenance of PASC\'s website built on Wordpress CMS.',
+      website: 'https://www.linkedin.com/company/pucit-acm-student-chapter/',
     },
     {
-      companyName: 'Graphic Designer',
-      designation: 'PITB | Plan9 Tech Incubator',
-      duration: {
-        startDate: {
-          day: '',
-          month: '',
-          year: '',
-        },
-        endDate: {
-          day: '',
-          month: '',
-          year: '2015',
-        },
-      },
+      companyName: 'PUCIT - ACM Student Chapter',
+      endDate: '2016-12-31',
+      position: 'Graphic Designer',
+      startDate: '2015-12-31',
+      summary: 'As a Graphic Designer, my job at PASC was to design eye-catching designs that represented the chapter and its ideology.',
+      website: 'https://www.linkedin.com/company/pucit-acm-student-chapter/',
     },
+    {
+      companyName: 'Punjab University College of Information Technology,Lahore',
+      endDate: '2017-12-31',
+      position: 'Teacher Assistant',
+      startDate: '2013-12-31',
+      summary: 'In the apprenticeship of Sir Imran Khalil, I was given the opportunity to assist the bright minds of the future in their Programming Fundamentals Course. This opportunity served me as a benchmark to learn crowd management and presentational skills.',
+      website: 'https://www.linkedin.com/company/punjab-university-college-of-information-technology-lahore/',
+    },
+    {
+      companyName: 'Plan9 - PITB\'s Tech Incubator',
+      endDate: '2015-10-31',
+      position: 'Graphic Designer',
+      startDate: '2015-07-31',
+      summary: 'At Trequant, my job was to create the interface for their Bio-tech prototype - which consisted of a wrist-watch. Also, my job was to make designs for their Social Media Marketing campaign and for their website.',
+      website: 'https://www.linkedin.com/company/plan9---pitbs-tech-incubator/',
+    },
+    {
+      companyName: 'Geniusity',
+      endDate: '2014-03-31',
+      position: 'Web Development Intern',
+      startDate: '2013-09-30',
+      summary: 'While working for Geniusity, I learned languages such as HTML, CSS and JavaScript. I also had my Graphics designing training and worked my way towards the field of UI/UX Development.',
+      website: 'https://www.linkedin.com/company/geniusity/',
+    },
+  ],
+  certifications: [{
+    name: 'Front End Libraries',
+    issuedBy: 'freeCodeCamp',
+    verificationURL: 'https://www.freecodecamp.org/certification/fahadachaudhry/front-end-libraries',
+  },
+  {
+    name: 'JavaScript Algorithms and Data Structures',
+    issuedBy: 'freeCodeCamp',
+    verificationURL: 'https://www.freecodecamp.org/certification/fahadachaudhry/javascript-algorithms-and-data-structures',
+  },
   ],
   projects: [
     {
       name: 'Red Velvet Cupcake | VSCode Theme',
+      companyName: '',
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.velvet-cupcake-theme',
-      description: 'Red Velvet Cupcake is a playful VSCode theme. Currently available on Microsoft VSCode Marketplace.',
-      tags: ['yomen', 'css', 'json'],
+      description: ['Red Velvet Cupcake is a playful VSCode theme. Currently available on Microsoft VSCode Marketplace.'],
+      tags: ['Yeoman', 'CSS', 'JSON'],
     },
     {
       name: 'Valary | VSCode Theme',
+      companyName: '',
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.valary',
-      description: 'Valary is an immersive Dark Theme for VSCode. Currently available on Microsoft VSCode Marketplace.',
-      tags: ['yomen', 'css', 'json'],
+      description: ['Valary is an immersive Dark Theme for VSCode. Currently available on Microsoft VSCode Marketplace.'],
+      tags: ['Yeoman', 'CSS', 'JSON'],
+    },
+    {
+      name: 'Innovation Projects',
+      companyName: 'CureMD Research and Development',
+      url: '',
+      description: ['I have proposed and successfully developed the following projects as personal innovative suggestions at CureMD Research & Development:',
+        '1. Revamping the referrals module by User Interface reusability/flexibility and limiting the content flow on screen for the user to avoid overcrowdedness of information.',
+        '2. Users prompt reduction to enhance interruption-free user experience in the Superbill module.',
+        '3. Development of a dashboard to resolve client requests(L3s) at a decreased SLA.',
+      ],
+      tags: ['.NET', 'JS', 'CSS', 'HTML'],
+    },
+    {
+      name: 'Billing Rule Engine - Expert System',
+      companyName: 'CureMD Research and Development',
+      url: '',
+      description: ['In this project, we enabled the doctors to identify and rectify insurance-claim rejections at the appointment stage which is far earlier than the billing stage, using a C# based web service. This step reduced the insurance-claims rejections drastically and improved the overall efficiency of the billing process.'],
+      tags: ['.NET', 'JS', 'CSS', 'HTML'],
     },
   ],
 };

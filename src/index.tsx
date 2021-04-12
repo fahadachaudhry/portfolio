@@ -1,44 +1,25 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Particles from 'react-particles-js';
 import Background from './components/background';
 import Experiences from './components/experience';
+import Certifications from './components/certifications';
 import Intro from './components/intro';
 import Projects from './components/projects';
 import Skills from './components/skills';
+import Footer from './components/footer';
 
 import './styles/styles.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Particles
-      params={{
-        particles: {
-          color: {
-            value: '#a0a0a0',
-          },
-          lineLinked: {
-            enable: true,
-            color: {
-              value: '#a0a0a0',
-            },
-          },
-          number: {
-            value: 50,
-          },
-          size: {
-            value: 3,
-          },
-        },
-      }}
-      className="position-fixed w-100 h-100"
-    />
     <Intro />
     <Background />
+    <Certifications />
     <Skills />
     <Experiences />
     <Projects />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root'),
 );

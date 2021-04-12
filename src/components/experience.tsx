@@ -14,21 +14,18 @@ const Experience = () => {
             <div className="pb-4">
               <div className="d-flex align-items-center justify-content-between">
                 <h6 className="text-bold">{item.companyName}</h6>
-                <div>
+                {/* <div>
                   <span>
-                    {item.duration.startDate.month}
-                    {' '}
-                    {item.duration.startDate.year}
+                    {item.startDate}
                   </span>
                   {' - '}
                   <span>
-                    {item.duration.endDate.month}
-                    {' '}
-                    {item.duration.endDate.year}
+                    {item.endDate}
                   </span>
-                </div>
+                </div> */}
               </div>
-              <p>{item.designation}</p>
+              <p>{item.position}</p>
+              <p>{item.summary}</p>
             </div>
           ))}
         </Col>
