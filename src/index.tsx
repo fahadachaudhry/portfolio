@@ -9,6 +9,7 @@ import Projects from './components/projects';
 import Skills from './components/skills';
 import Footer from './components/footer';
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './styles/styles.scss';
 
 ReactDOM.render(
