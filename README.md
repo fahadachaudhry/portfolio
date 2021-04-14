@@ -16,6 +16,6 @@ Original design taken from [Brittany Chiang's Portfolio Repository (v3)](https:/
 ## Theming Steps
 1. Head over to `src\styles\styles.scss`
 
-![Theming Colors](/src/assets/readme-assets/colors.png?raw=true "Theming Colors")
+![Theming Colors](/src/assets/readme-assets/theme-colors.png?raw=true "Theming Colors")
 
 2. Changing these colors 👆🏼 will take effect in the entire application.
