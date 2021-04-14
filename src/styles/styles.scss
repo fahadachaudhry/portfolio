@@ -14,10 +14,9 @@ $card-gradient-2: rgba(#6200ff, 0.2);
 // $selection-color: #131313;
 // $body-color: #FFFFFF;
 // $body-background-color: #131313;
-// $card-gradient-1: #8b46fa;
-// $card-gradient-2: rgba(#6200ff, 0.2);
+// $card-gradient-1: $secondary;
+// $card-gradient-2: rgba($primary, 0.2);
 
-@import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
 
 html,
@@ -57,8 +56,12 @@ a {
   }
 }
 
+.footer-credits{
+  font-size: 15px;
+}
+
 .footer-link{
-  margin-left: 20px;
+  font-size: 15px;
   display: inline;
   a{
     color: $primary;

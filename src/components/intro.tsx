@@ -8,13 +8,13 @@ import Testimonial from './Testimonial';
 const Intro = () => {
   const profileData = getProfileData();
   return (
-    <Container className="height-100vh d-flex align-items-center intro">
+    <Container className="height-100vh d-flex align-items-center intro pt-4 pb-4">
       <Row className="align-items-center">
-        <Col md={3}>
+        <Col lg={3}>
           <img src={avatar} alt="avatar" className="shadow-lg rounded w-100" />
         </Col>
-        <Col md={6}>
-          <div className="p-5">
+        <Col lg={6}>
+          <div className="pt-5 pb-5">
             <p className="pb-2">Hello! 👋🏼</p>
             <p className="pb-2">
               I&apos;m

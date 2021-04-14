@@ -9,8 +9,10 @@ import Projects from './components/projects';
 import Skills from './components/skills';
 import Footer from './components/footer';
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/styles.scss';
+
+process.version = '3.0.1';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -87,7 +87,7 @@ const profile : IProfile = {
     },
     {
       name: 'Ahmad Muzzafar',
-      avatar: 'https://media-exp1.licdn.com/dms/image/C4D35AQHfBlekgGaw2A/profile-framedphoto-shrink_400_400/0/1614669344736?e=1618326000&v=beta&t=yz0shQUwT6XlIB6u7_ufeGk4uyI8u6MBi9ETnyIU5S8',
+      avatar: '',
       quote: 'Learning to crawl, walk, run and fly.',
     },
     {

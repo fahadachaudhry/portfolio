@@ -8,7 +8,7 @@ const Certifications = () => {
   return (
     <Container className="pt-5 pb-5">
       <Row>
-        <Col md={2} className="main-heading"><h5>Certifications</h5></Col>
+        <Col md={2} className="main-heading"><h5 className="text-bold">Certifications</h5></Col>
         <Col md={10}>
           {profileData.certifications?.map((item) => (
             <div className="pb-4">

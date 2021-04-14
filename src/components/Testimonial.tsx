@@ -12,7 +12,7 @@ const Testimonial = () => {
   const profileData = getProfileData();
   return (
     <div className="testimonial p-3 shadow-lg">
-      <h4 className="text-center pb-5 testimonial-heading text-light font-weight-bold">Students Taught (100+)</h4>
+      <h4 className="text-center pb-5 testimonial-heading text-light font-weight-bold">Students Taught (25+)</h4>
       <Carousel
         prevIcon={<RiArrowLeftSLine />}
         nextIcon={<RiArrowRightSLine />}
