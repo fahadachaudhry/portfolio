@@ -20,10 +20,10 @@ const Footer = () => {
           <p className="p-0 m-0 mb-1">
             Ported to React and developed by Shahzada Fahad 🤙🏼 2020
           </p>
-          <p className="p-0 m-0 mb-1">
+          <span className="background-color-dark color-light p-1 rounded d-inline-block mb-1">
             v
             {process.version}
-          </p>
+          </span>
         </Col>
         <Col lg={6} className="mb-2">
           <ul className="float-lg-right">

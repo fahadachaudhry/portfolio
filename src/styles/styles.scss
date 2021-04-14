@@ -19,6 +19,15 @@ $card-gradient-2: rgba(#6200ff, 0.2);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
 
+.color-primary{ color: $primary};
+.color-secondary{ color: $secondary};
+.color-light{ color: $light};
+.color-dark{ color: $dark};
+.background-color-primary{ background-color: $primary};
+.background-color-secondary{ background-color: $secondary};
+.background-color-light{ background-color: $light};
+.background-color-dark{ background-color: $dark};
+
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -57,11 +66,11 @@ a {
 }
 
 .footer-credits{
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer-link{
-  font-size: 15px;
+  font-size: 14px;
   display: inline;
   a{
     color: $primary;
