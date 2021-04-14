@@ -18,4 +18,4 @@ Original design taken from [Brittany Chiang's Portfolio Repository (v3)](https:/
 
 ![Theming Colors](/src/assets/readme-assets/colors.png?raw=true "Theming Colors")
 
-2. Change these colors 👆🏼 which take effect in the entire application.
+2. Changing these colors 👆🏼 will take effect in the entire application.
