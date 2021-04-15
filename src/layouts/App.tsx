@@ -38,7 +38,7 @@ function App() {
   return (
     <>
       <div className="w-100 d-flex flex-row-reverse p-3">
-        <h4 className="ml-2 dark-mode-switch-icons"><BiMoon /></h4>
+        <h5 className="ml-2 dark-mode-switch-icons"><BiMoon /></h5>
         <Switch
           className="react-switch"
           onChange={() => {
@@ -52,7 +52,7 @@ function App() {
           onHandleColor={mainColors.light}
           offHandleColor={mainColors.light}
         />
-        <h4 className="mr-2 dark-mode-switch-icons"><BiSun /></h4>
+        <h5 className="mr-2 dark-mode-switch-icons"><BiSun /></h5>
       </div>
       {/* <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
         {darkTheme ? 'Light Theme' : 'Dark Theme'}
