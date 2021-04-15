@@ -19,26 +19,58 @@ $card-gradient-2: rgba(#6200ff, 0.2);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
 
-$colors: $primary, $secondary, $light, $dark, $selection;
 
-@each $color in $colors {
-  .color-#{$color} {
-    color: $color
-  }
-  .color-hover-#{$color} {
-    &:hover{
-      color: $color
-    }
-  }
-  .background-color-#{$color} {
-    background-color: $color
-  }
-  .background-color-hover-#{$color} {
-    &:hover{
-      background-color: $color
-    }
-  }
-}
+.color-primary { color: $primary; }
+.color-hover-primary { &:hover{ color: $primary; } }
+.background-color-primary { background-color: $primary; }
+.background-color-hover-primary {  &:hover{ background-color: $primary; } }
+
+.color-secondary { color: $secondary; }
+.color-hover-secondary { &:hover{ color: $secondary; } }
+.background-color-secondary { background-color: $secondary; }
+.background-color-hover-secondary {  &:hover{ background-color: $secondary; } }
+
+.color-light { color: $light; }
+.color-hover-light { &:hover{ color: $light; } }
+.background-color-light { background-color: $light; }
+.background-color-hover-light {  &:hover{ background-color: $light; } }
+
+.color-dark { color: $dark; }
+.color-hover-dark { &:hover{ color: $dark; } }
+.background-color-dark { background-color: $dark; }
+.background-color-hover-dark {  &:hover{ background-color: $dark; } }
+
+.color-selection { color: $selection; }
+.color-hover-selection { &:hover{ color: $selection; } }
+.background-color-selection { background-color: $selection; }
+.background-color-hover-selection {  &:hover{ background-color: $selection; } }
+
+
+
+
+// @each $color in $colors {
+
+//   .color-#{$color} {
+//     color: $color
+//   }
+
+//   .color-hover-#{$color} {
+//     &:hover{
+//       color: $color
+//     }
+//   }
+
+//   .background-color-#{$color} {
+//     background-color: $color
+//   }
+
+//   .background-color-hover-#{$color} {
+//     &:hover{
+//       background-color: $color
+//     }
+//   }
+
+// }
 
 html,
 body {

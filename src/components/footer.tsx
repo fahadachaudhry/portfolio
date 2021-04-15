@@ -27,7 +27,7 @@ const Footer = () => {
       </Row>
       <Row>
         <Col className="text-center">
-          <a href="https://github.com/fahadachaudhry/portfolio" target="_blank" className="rounded d-inline-block m-0 p-0 footer-version" rel="noreferrer">
+          <a href="https://github.com/fahadachaudhry/portfolio" target="_blank" className="rounded d-inline-block m-0 p-1 footer-version" rel="noreferrer">
             <h4 className="d-inline-block pr-2">
               <GrGithub />
             </h4>
