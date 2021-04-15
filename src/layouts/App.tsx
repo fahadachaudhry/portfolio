@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect, useState } from 'react';
 import Switch from 'react-switch';
+import { BiMoon, BiSun } from 'react-icons/bi';
 import Background from '../components/background';
 import Experiences from '../components/experience';
 import Certifications from '../components/certifications';
@@ -37,7 +38,7 @@ function App() {
   return (
     <>
       <div className="w-100 d-flex flex-row-reverse p-3">
-        <h4 className="ml-2">🌙</h4>
+        <h4 className="ml-2 dark-mode-switch-icons"><BiMoon /></h4>
         <Switch
           className="react-switch"
           onChange={() => {
@@ -51,7 +52,7 @@ function App() {
           onHandleColor={mainColors.light}
           offHandleColor={mainColors.light}
         />
-        <h4 className="mr-2">🌞</h4>
+        <h4 className="mr-2 dark-mode-switch-icons"><BiSun /></h4>
       </div>
       {/* <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
         {darkTheme ? 'Light Theme' : 'Dark Theme'}
