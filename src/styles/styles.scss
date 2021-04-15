@@ -19,14 +19,26 @@ $card-gradient-2: rgba(#6200ff, 0.2);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
 
-.color-primary{ color: $primary};
-.color-secondary{ color: $secondary};
-.color-light{ color: $light};
-.color-dark{ color: $dark};
-.background-color-primary{ background-color: $primary};
-.background-color-secondary{ background-color: $secondary};
-.background-color-light{ background-color: $light};
-.background-color-dark{ background-color: $dark};
+$colors: $primary, $secondary, $light, $dark, $selection;
+
+@each $color in $colors {
+  .color-#{$color} {
+    color: $color
+  }
+  .color-hover-#{$color} {
+    &:hover{
+      color: $color
+    }
+  }
+  .background-color-#{$color} {
+    background-color: $color
+  }
+  .background-color-hover-#{$color} {
+    &:hover{
+      background-color: $color
+    }
+  }
+}
 
 html,
 body {
@@ -65,13 +77,19 @@ a {
   }
 }
 
+.footer-version{
+  color: $dark;
+  background-color: $light;
+}
+
 .footer-credits{
   font-size: 14px;
 }
 
-.footer-link{
+.footer-social-link{
   font-size: 14px;
-  display: inline;
+  display: flex;
+  justify-content: space-between;
   a{
     color: $primary;
     background-color: transparent !important;

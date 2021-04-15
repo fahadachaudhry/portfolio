@@ -1,4 +1,9 @@
-# fahadachaudhry\portfolio 🎇
+# fahadachaudhry\portfolio 👋🏼
+
+![issues](https://img.shields.io/github/issues/fahadachaudhry/portfolio?style=flat-square)
+![forks](https://img.shields.io/github/forks/fahadachaudhry/portfolio?style=flat-square)
+![stars](https://img.shields.io/github/stars/fahadachaudhry/portfolio?style=flat-square)
+
 
 This Portfolio was created using ReactJS and React-Bootstrap.
 Original design taken from [Brittany Chiang's Portfolio Repository (v3)](https://github.com/bchiang7/bchiang7.github.io).

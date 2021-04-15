@@ -100,6 +100,10 @@ const profile : IProfile = {
   socials: [
     {
       name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/fahadachaudhry',
+    },
+    {
+      name: 'Behance',
       url: 'http://www.behance.com/fahadachaudhry',
     },
     {
