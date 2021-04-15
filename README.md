@@ -1,3 +1,5 @@
+![Theming Colors](/src/assets/readme-assets/header.png?raw=true "Theming Colors")
+
 # fahadachaudhry\portfolio 👋🏼
 
 ![issues](https://img.shields.io/github/issues/fahadachaudhry/portfolio?style=flat-square)
