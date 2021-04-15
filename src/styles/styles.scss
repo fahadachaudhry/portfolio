@@ -1,117 +1,59 @@
-$primary: #6200ff;
-$secondary: #8b46fa;
-$light: #FFFFFF;
-$dark: #131313;
-$selection: #FFDC00;
-
-$selection-color: #131313;
-$body-color: #131313;
-$body-background-color: #FFFFFF;
-$card-gradient-1: #8b46fa;
-$card-gradient-2: rgba(#6200ff, 0.2);
-
-// DARK MODE VARIABLES
-// $selection-color: #131313;
-// $body-color: #FFFFFF;
-// $body-background-color: #131313;
-// $card-gradient-1: $secondary;
-// $card-gradient-2: rgba($primary, 0.2);
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;600&display=swap");
 
+.color-primary { color: var(--primary); }
+.color-hover-primary { &:hover{ color: var(--primary); } }
+.background-color-primary { background-color: var(--primary); }
+.background-color-hover-primary {  &:hover{ background-color: var(--primary); } }
 
-.color-primary { color: $primary; }
-.color-hover-primary { &:hover{ color: $primary; } }
-.background-color-primary { background-color: $primary; }
-.background-color-hover-primary {  &:hover{ background-color: $primary; } }
+.color-secondary { color: var(--secondary); }
+.color-hover-secondary { &:hover{ color: var(--secondary); } }
+.background-color-secondary { background-color: var(--secondary); }
+.background-color-hover-secondary {  &:hover{ background-color: var(--secondary); } }
 
-.color-secondary { color: $secondary; }
-.color-hover-secondary { &:hover{ color: $secondary; } }
-.background-color-secondary { background-color: $secondary; }
-.background-color-hover-secondary {  &:hover{ background-color: $secondary; } }
+.color-light { color: var(--light); }
+.color-hover-light { &:hover{ color: var(--light); } }
+.background-color-light { background-color: var(--light); }
+.background-color-hover-light {  &:hover{ background-color: var(--light); } }
 
-.color-light { color: $light; }
-.color-hover-light { &:hover{ color: $light; } }
-.background-color-light { background-color: $light; }
-.background-color-hover-light {  &:hover{ background-color: $light; } }
+.color-dark { color: var(--dark); }
+.color-hover-dark { &:hover{ color: var(--dark); } }
+.background-color-dark { background-color: var(--dark); }
+.background-color-hover-dark {  &:hover{ background-color: var(--dark); } }
 
-.color-dark { color: $dark; }
-.color-hover-dark { &:hover{ color: $dark; } }
-.background-color-dark { background-color: $dark; }
-.background-color-hover-dark {  &:hover{ background-color: $dark; } }
-
-.color-selection { color: $selection; }
-.color-hover-selection { &:hover{ color: $selection; } }
-.background-color-selection { background-color: $selection; }
-.background-color-hover-selection {  &:hover{ background-color: $selection; } }
-
+.color-selection { color: var(--selection); }
+.color-hover-selection { &:hover{ color: var(--selection); } }
+.background-color-selection { background-color: var(--selection); }
+.background-color-hover-selection {  &:hover{ background-color: var(--selection); } }
 
 
+::-moz-selection {
+  background: var(--selection);
+}
 
-// @each $color in $colors {
-
-//   .color-#{$color} {
-//     color: $color
-//   }
-
-//   .color-hover-#{$color} {
-//     &:hover{
-//       color: $color
-//     }
-//   }
-
-//   .background-color-#{$color} {
-//     background-color: $color
-//   }
-
-//   .background-color-hover-#{$color} {
-//     &:hover{
-//       background-color: $color
-//     }
-//   }
-
-// }
-
-html,
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  background-color: $body-background-color;
-  color: $body-color;
-  transition: 0.5s all;
+::selection {
+  background: var(--selection);
 }
 
 .height-100vh {
   min-height: 100vh;
 }
 
-::-moz-selection {
-  background: $selection;
-  color: $selection-color;
-}
-
-::selection {
-  background: $selection;
-  color: $selection-color;
-}
-
 a {
   padding: 4px;
   border-radius: 4px;
-  color: $light;
-  background-color: $secondary;
+  color: var(--light);
+  background-color: var(--secondary);
   transition: 0.1s all;
   &:hover {
     text-decoration: none;
-    color: $light;
-    background-color: $primary;
+    color: var(--light);
+    background-color: var(--primary);
   }
 }
 
 .footer-version{
-  color: $dark;
-  background-color: $light;
+  color: var(--dark);
+  background-color: var(--light);
 }
 
 .footer-credits{
@@ -123,11 +65,11 @@ a {
   display: flex;
   justify-content: space-between;
   a{
-    color: $primary;
+    color: var(--primary);
     background-color: transparent !important;
     &:hover {
       text-decoration: underline;
-      color: $primary;
+      color: var(--primary);
     }
   }
 }
@@ -142,7 +84,7 @@ ul {
 }
 
 .main-heading {
-  color: $primary;
+  color: var(--primary);
 }
 
 .text-bold {
@@ -155,7 +97,7 @@ ul {
 }
 
 .btn-custom{
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
   padding: 8px;
   font-size: 14px;
 }
@@ -166,32 +108,24 @@ ul {
   width: 30px;
   border-radius: 100%;
   transition: 0.25s all;
-  background-color: $light;
-  color: $primary;
+  background-color: var(--light);
+  color: var(--primary);
   &:hover{
-    color: $primary;
-    background-color: $light;
+    color: var(--primary);
+    background-color: var(--light);
   }
   &:focus{
-    color: $primary;
+    color: var(--primary);
   }
 }
 .carousel-indicators{
   margin-bottom: 10px;
   li{
-    background-color: $light;
+    background-color: var(--light);
     height: 10px;
     width: 10px;
     border-radius: 100%;
   }
-}
-
-.testimonial{
-  background: $primary;
-background: -webkit-linear-gradient(to bottom, $card-gradient-1, rgba($card-gradient-2, 0.8));
-background: linear-gradient(to bottom, $card-gradient-1, rgba($card-gradient-2, 0.8));
-
-  border-radius: 8px;
 }
 
 .testimonial-heading{
@@ -199,7 +133,7 @@ background: linear-gradient(to bottom, $card-gradient-1, rgba($card-gradient-2, 
 }
 
 .testimonial-card{
-  color: $light;
+  color: var(--light);
   height: 220px;
   .name{
     font-size: 16px;

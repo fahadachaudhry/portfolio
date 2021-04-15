@@ -1,0 +1,22 @@
+::-moz-selection {
+  color: var(--selection-color)-color;
+}
+
+::selection {
+  color: var(--selection-color)-color;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+  transition: 0.5s all;
+}
+
+.testimonial{
+  background-color: var(--secondary);
+  border-radius: 8px;
+}
