@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <Container fluid className="pb-4">
       <Row>
-        <Col lg={4} className="text-bold footer-credits">
+        <Col lg={8} className="text-bold footer-credits">
           <p className="p-0 m-0 mb-1">
             Designed by
             {' '}
@@ -23,7 +23,6 @@ const Footer = () => {
             Ported to React and developed by Shahzada Fahad 🤙🏼 2020
           </p>
         </Col>
-        <Col lg={4} className="mb-2" />
         <Col lg={4} className="mb-2">
           <div className="footer-social-link">
             {profileData.socials?.map(
