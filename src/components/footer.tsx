@@ -8,26 +8,18 @@ import getProfileData from '../data/data';
 const Footer = () => {
   const profileData = getProfileData();
   return (
-    <Container fluid className="pb-4">
+    <Container className="pb-4">
       <Row>
         <Col lg={8} className="text-bold footer-credits">
-          <p className="p-0 m-0 mb-1">
-            Designed by
-            {' '}
-            <a href="https://github.com/bchiang7">Brittany Chiang</a>
-            {' '}
-            🤟🏼 2018
-            <br />
-          </p>
-          <p className="p-0 m-0 mb-1">
-            Ported to React and developed by Shahzada Fahad 🤙🏼 2020
+          <p>
+            Designed and Developed by Shahzada Fahad 🤙🏼 2020
           </p>
         </Col>
         <Col lg={4} className="mb-2">
           <div className="footer-social-link">
             {profileData.socials?.map(
               (item) => (
-                <a href={item.url} className="text-bold" target="_blank" rel="noreferrer">{item.name}</a>
+                <a href={item.url} className="text-bold p-0" target="_blank" rel="noreferrer">{item.name}</a>
               ),
             )}
           </div>
@@ -35,10 +27,10 @@ const Footer = () => {
       </Row>
       <Row>
         <Col className="text-center">
-          <a href="https://github.com/fahadachaudhry/portfolio" target="_blank" className="p-1 rounded d-inline-block mb-1 footer-version" rel="noreferrer">
-            <h3 className="d-inline-block pr-2">
+          <a href="https://github.com/fahadachaudhry/portfolio" target="_blank" className="rounded d-inline-block m-0 p-0 footer-version" rel="noreferrer">
+            <h4 className="d-inline-block pr-2">
               <GrGithub />
-            </h3>
+            </h4>
             v
             {packageJSON.version}
           </a>

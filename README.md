@@ -6,7 +6,6 @@
 
 
 This Portfolio was created using ReactJS and React-Bootstrap.
-Original design taken from [Brittany Chiang's Portfolio Repository (v3)](https://github.com/bchiang7/bchiang7.github.io).
 
 ## Dependencies
 - react
