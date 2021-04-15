@@ -1,4 +1,4 @@
-![Theming Colors](/src/assets/readme-assets/header.png?raw=true "Theming Colors")
+![Header](/src/assets/readme-assets/header-1.png?raw=true "Theming Colors")
 
 # fahadachaudhry\portfolio 👋🏼
 
