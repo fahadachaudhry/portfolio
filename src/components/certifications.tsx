@@ -18,7 +18,7 @@ const Certifications = () => {
                   {item.issuedBy}
                 </span>
               </div>
-              <a target="_blank" href={item.verificationURL} className="btn-custom" rel="noreferrer">See Credentials</a>
+              <a target="_blank" href={item.verificationURL} className="btn-custom btn-custom-primary" rel="noreferrer">See Credentials</a>
             </div>
           ))}
         </Col>

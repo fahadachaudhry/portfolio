@@ -1,9 +1,11 @@
 ::-moz-selection {
-  color: var(--selection-color)-color;
+  background-color: var(--selection);
+  color: var(--selection-color);
 }
 
 ::selection {
-  color: var(--selection-color)-color;
+  background-color: var(--selection);
+  color: var(--selection-color);
 }
 
 html,
@@ -18,5 +20,24 @@ body {
 
 .testimonial{
   background-color: var(--secondary);
+  border-radius: 8px;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  // padding: 20px;
+  border: 1px solid var(--card-border);
+  // background-color: var(--dark);
+  // color: var(--light);
+  margin: 0px 20px 20px 0px;
   border-radius: 8px;
 }

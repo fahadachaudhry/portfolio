@@ -1,7 +1,8 @@
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Particles from 'react-particles-js';
+import { BsArrowUp } from 'react-icons/bs';
 import avatar from '../assets/images/avatar.jpeg';
 import getProfileData from '../data/data';
 import Testimonial from './Testimonial';
@@ -12,6 +13,19 @@ interface IIntroProps{
 }
 
 const Intro = (props:IIntroProps) => {
+  const [showScroll, updateShowScroll] = useState(false);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.onscroll = () => {
+        if (window.pageYOffset > 0) {
+          updateShowScroll(false);
+        } else {
+          updateShowScroll(true);
+        }
+      };
+    }
+  }, [showScroll]);
+
   const { isDarkThemeEnabled } = props;
   const profileData = getProfileData();
   const themedColors = colorStore.getThemedColors(isDarkThemeEnabled);
@@ -71,7 +85,21 @@ const Intro = (props:IIntroProps) => {
               </Col>
             </Row>
           </Container>
-
+        </Col>
+      </Row>
+      <Row>
+        <Col className="text-right d-none d-lg-block">
+          <button type="button" className="scroll-top" hidden={showScroll}>
+            <BsArrowUp
+              className="cursor-pointer"
+              onClick={() => {
+                const body = document.querySelector('#root');
+                body?.scrollIntoView({
+                  behavior: 'smooth',
+                });
+              }}
+            />
+          </button>
         </Col>
       </Row>
     </Container>

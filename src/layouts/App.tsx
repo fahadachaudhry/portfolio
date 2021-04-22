@@ -54,15 +54,12 @@ function App() {
         />
         <h5 className="mr-2 dark-mode-switch-icons"><BiSun /></h5>
       </div>
-      {/* <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
-        {darkTheme ? 'Light Theme' : 'Dark Theme'}
-      </button> */}
       <Intro isDarkThemeEnabled={darkTheme} />
       <Background />
       <Certifications />
       <Skills />
-      <Experiences />
       <Projects />
+      <Experiences />
       <Footer />
     </>
   );

@@ -11,6 +11,7 @@ export interface ICertification{
 }
 
 export interface IProject{
+  imageUrl?: string;
   name: string;
   companyName: string;
   url: string;
@@ -171,7 +172,7 @@ const profile : IProfile = {
       website: 'https://www.linkedin.com/company/pucit-acm-student-chapter/',
     },
     {
-      companyName: 'Punjab University College of Information Technology,Lahore',
+      companyName: 'Punjab University College of Information Technology, Lahore',
       endDate: '2017-12-31',
       position: 'Teacher Assistant',
       startDate: '2013-12-31',
@@ -209,6 +210,7 @@ const profile : IProfile = {
   projects: [
     {
       name: 'Red Velvet Cupcake | VSCode Theme',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png',
       companyName: '',
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.velvet-cupcake-theme',
       description: ['Red Velvet Cupcake is a playful VSCode theme. Currently available on Microsoft VSCode Marketplace.'],
@@ -216,6 +218,7 @@ const profile : IProfile = {
     },
     {
       name: 'Valary | VSCode Theme',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png',
       companyName: '',
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.valary',
       description: ['Valary is an immersive Dark Theme for VSCode. Currently available on Microsoft VSCode Marketplace.'],
@@ -223,6 +226,7 @@ const profile : IProfile = {
     },
     {
       name: 'Innovation Projects',
+      imageUrl: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFgU6zE-7cGRA/company-logo_200_200/0/1519857000411?e=2159024400&v=beta&t=8PuC9iyroIQ0yNPWubJyYWD1ThAZJnRFjhCT7oinSCg',
       companyName: 'CureMD Research and Development',
       url: '',
       description: ['I have proposed and successfully developed the following projects as personal innovative suggestions at CureMD Research & Development:',
@@ -234,6 +238,7 @@ const profile : IProfile = {
     },
     {
       name: 'Billing Rule Engine - Expert System',
+      imageUrl: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFgU6zE-7cGRA/company-logo_200_200/0/1519857000411?e=2159024400&v=beta&t=8PuC9iyroIQ0yNPWubJyYWD1ThAZJnRFjhCT7oinSCg',
       companyName: 'CureMD Research and Development',
       url: '',
       description: ['In this project, we enabled the doctors to identify and rectify insurance-claim rejections at the appointment stage which is far earlier than the billing stage, using a C# based web service. This step reduced the insurance-claims rejections drastically and improved the overall efficiency of the billing process.'],

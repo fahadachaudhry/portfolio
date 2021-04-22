@@ -2,7 +2,7 @@
   "name": "fahadachaudhry",
   "description": "Personal Portfolio Template",
   "homepage": "https://fahadachaudhry.github.io/portfolio",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
@@ -18,6 +18,7 @@
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-masonry-css": "^1.0.16",
     "react-particles-js": "^3.4.1",
     "react-scripts": "4.0.3",
     "react-switch": "^6.0.0",
