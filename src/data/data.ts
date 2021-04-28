@@ -210,7 +210,7 @@ const profile : IProfile = {
   projects: [
     {
       name: 'Red Velvet Cupcake | VSCode Theme',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png',
+      imageUrl: 'https://images.unsplash.com/photo-1524135329990-07660cd5bf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80',
       companyName: '',
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.velvet-cupcake-theme',
       description: ['Red Velvet Cupcake is a playful VSCode theme. Currently available on Microsoft VSCode Marketplace.'],
@@ -218,7 +218,7 @@ const profile : IProfile = {
     },
     {
       name: 'Valary | VSCode Theme',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png',
+      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       companyName: '',
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.valary',
       description: ['Valary is an immersive Dark Theme for VSCode. Currently available on Microsoft VSCode Marketplace.'],
@@ -226,7 +226,7 @@ const profile : IProfile = {
     },
     {
       name: 'Innovation Projects',
-      imageUrl: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFgU6zE-7cGRA/company-logo_200_200/0/1519857000411?e=2159024400&v=beta&t=8PuC9iyroIQ0yNPWubJyYWD1ThAZJnRFjhCT7oinSCg',
+      imageUrl: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       companyName: 'CureMD Research and Development',
       url: '',
       description: ['I have proposed and successfully developed the following projects as personal innovative suggestions at CureMD Research & Development:',
@@ -238,7 +238,7 @@ const profile : IProfile = {
     },
     {
       name: 'Billing Rule Engine - Expert System',
-      imageUrl: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFgU6zE-7cGRA/company-logo_200_200/0/1519857000411?e=2159024400&v=beta&t=8PuC9iyroIQ0yNPWubJyYWD1ThAZJnRFjhCT7oinSCg',
+      imageUrl: 'https://images.unsplash.com/photo-1578496479763-c21c718af028?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80',
       companyName: 'CureMD Research and Development',
       url: '',
       description: ['In this project, we enabled the doctors to identify and rectify insurance-claim rejections at the appointment stage which is far earlier than the billing stage, using a C# based web service. This step reduced the insurance-claims rejections drastically and improved the overall efficiency of the billing process.'],

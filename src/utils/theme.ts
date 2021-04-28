@@ -1,11 +1,8 @@
 const mainColors = {
-  primary: '#774CC2',
-  secondary: '#513485',
-  dark: '#291A42',
-  alternate: '#8051D2',
-  temp: '#',
-  // --------------------------------------------
+  primary: '#6952C4',
+  secondary: '#584A8F',
   light: '#FFFFFF',
+  dark: '#373442',
   selection: '#FFDC00',
   lightGray: '#f0f0f0',
   gray: '#808080',

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Masonry from 'react-masonry-css';
-import getProfileData from '../data/data';
+import getProfileData, { IProject } from '../data/data';
 
 const Projects = () => {
   const profileData = getProfileData();
@@ -14,45 +14,56 @@ const Projects = () => {
           <Masonry
             breakpointCols={{
               default: 2,
-              1100: 2,
-              700: 2,
+              1100: 1,
+              700: 1,
               500: 1,
             }}
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column"
           >
             {profileData.projects?.map((item) => (
-              <div className="p-4">
-                <div className="project-image" style={{ backgroundImage: `url(${item.imageUrl})` }} />
-                <div className="d-flex align-items-baseline justify-content-between pb-3">
-                  <h6 className="text-bold">{item.name}</h6>
-                  {item.url !== ''
-                      && (
-                        <a target="_blank" href={item.url} className="btn-custom btn-custom-success ml-2" rel="noreferrer">
-                          Visit
-                        </a>
-                      )}
-                </div>
-                {item.companyName !== ''
-              && <p>{item.companyName}</p>}
-                {item.description.map((desc) => (<p>{desc}</p>))}
-                <div className="d-flex align-items-center justify-content-between">
-                  <ul className="project-tags">
-                    {item.tags.map((tag) => (
-                      <li>
-                        #
-                        {tag}
-                        {/* {index !== item.tags.length - 1 ? ', ' : ''} */}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <ProjectCard cardData={item} />
             ))}
           </Masonry>
         </Col>
       </Row>
     </Container>
+  );
+};
+
+const ProjectCard = (props:{cardData:IProject}) => {
+  const {
+    cardData,
+  } = props;
+  return (
+    <div>
+      <div className="project-image" style={{ backgroundImage: `url(${cardData.imageUrl})` }} />
+      <div className="p-4">
+        <div className="pb-3">
+          <h6 className="text-bold pb-2">{cardData.name}</h6>
+          {cardData.url !== ''
+        && (
+          <a target="_blank" href={cardData.url} className="btn-custom btn-custom-success" rel="noreferrer">
+            Visit
+          </a>
+        )}
+        </div>
+        {cardData.companyName !== ''
+&& <p>{cardData.companyName}</p>}
+        {cardData.description.map((desc) => (<p>{desc}</p>))}
+        <div className="d-flex align-items-center justify-content-between">
+          <ul className="project-tags">
+            {cardData.tags.map((tag) => (
+              <li>
+                #
+                {tag}
+                {/* {index !== item.tags.length - 1 ? ', ' : ''} */}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 };
 
