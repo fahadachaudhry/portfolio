@@ -190,3 +190,22 @@ ul {
 .cursor-pointer{
   cursor: pointer;
 }
+
+.sidebar-nav{
+  margin-left: 50px;
+  width: 40px;
+}
+
+.sidebar-nav-content{
+  font-size: 26px;
+  padding: 28px 0px;
+  width: 100%;
+  bottom: 0;
+  color: var(--secondary);
+}
+
+.sidebar-nav-ruler{
+  background-color: var(--secondary);
+  height: 300px;
+  width: 1px;
+}

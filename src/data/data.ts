@@ -87,6 +87,11 @@ const profile : IProfile = {
       quote: 'Front-End Developer at Uncle Fixer',
     },
     {
+      name: 'Ailyah Christopher',
+      avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQFtX6s0y9aMjw/profile-displayphoto-shrink_400_400/0/1615563401157?e=1625097600&v=beta&t=lBw3lei20-m5lL147KACGlYzXbQYAds0uoc6bdMxDKg',
+      quote: 'Python Enthusiast',
+    },
+    {
       name: 'Ahmad Muzzafar',
       avatar: '',
       quote: 'Learning to crawl, walk, run and fly.',
@@ -116,8 +121,8 @@ const profile : IProfile = {
       url: 'http://www.instagram.com/fahadachaudhry',
     },
     {
-      name: 'Twitter',
-      url: 'http://www.twitter.com/fahadachaudhry',
+      name: 'Facebook',
+      url: 'http://www.facebook.com/fahadachaudhry',
     },
   ],
   email: 'sh.fahadashraf@gmail.com',

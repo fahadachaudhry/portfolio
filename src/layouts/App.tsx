@@ -13,6 +13,7 @@ import colorStore from '../utils/theme';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/themed-styles.scss';
 import '../styles/styles.scss';
+// import SidebarNav from '../components/sidebarNav';
 
 function App() {
   // This hook defaults to the current mode of the system.
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <>
+      {/* <SidebarNav /> */}
       <div className="w-100 d-flex flex-row-reverse p-3">
         <h5 className="ml-2 dark-mode-switch-icons"><BiMoon /></h5>
         <Switch
