@@ -60,17 +60,11 @@ a {
   font-size: 14px;
 }
 
-.footer-social-link{
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  a{
-    color: var(--primary);
-    background-color: transparent !important;
-    &:hover {
-      text-decoration: underline;
-      color: var(--primary);
-    }
+.social-link{
+  margin: 0px;
+  background-color: transparent;
+  &:hover{
+    background-color: dark;
   }
 }
 
@@ -197,15 +191,21 @@ ul {
 }
 
 .sidebar-nav-content{
-  font-size: 26px;
+  font-size: 20px;
   padding: 28px 0px;
   width: 100%;
   bottom: 0;
-  color: var(--secondary);
+  color: var(--body-color);
 }
 
+@media screen and (max-width: 1300px) {
+  .sidebar-nav-content, .sidebar-nav-ruler {
+    display: none;
+  }
+}
 .sidebar-nav-ruler{
-  background-color: var(--secondary);
+  background-color: var(--body-color);
   height: 300px;
   width: 1px;
+  margin: 0 auto;
 }

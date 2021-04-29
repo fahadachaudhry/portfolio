@@ -1,6 +1,10 @@
 /* eslint-disable max-len */
 export interface ISocial{
-  name: string;
+  name: 'LinkedIn' |
+  'Behance' |
+  'Github' |
+  'Instagram' |
+  'Facebook';
   url: string;
 }
 
