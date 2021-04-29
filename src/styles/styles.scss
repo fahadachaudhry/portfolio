@@ -62,6 +62,7 @@ a {
 
 .social-link{
   margin: 0px;
+  color: var(--body-color);
   background-color: transparent;
   &:hover{
     background-color: dark;
@@ -195,7 +196,6 @@ ul {
   padding: 28px 0px;
   width: 100%;
   bottom: 0;
-  color: var(--body-color);
 }
 
 @media screen and (max-width: 1300px) {
