@@ -265,13 +265,17 @@ ul {
   transform: rotate(90deg);
   transform-origin: bottom left;
   left: 8px;
-  // margin-top: 12px;
+  color: var(--body-color);
   font-size: 14px;
   background-color: transparent;
   &:hover{
     background-color: transparent;
     text-decoration: underline;
   }
+}
+
+.react-switch{
+  z-index: 2;
 }
 
 .background-quote{
