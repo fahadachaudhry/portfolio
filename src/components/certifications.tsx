@@ -11,9 +11,12 @@ const Certifications = () => {
         <Col md={2} className="main-heading"><h5 className="text-bold">Certifications</h5></Col>
         <Col md={10}>
           {profileData.certifications?.map((item) => (
-            <div className="pb-4">
-              <div className="d-flex align-items-center justify-content-between pb-2">
-                <h6 className="text-bold">{item.name}</h6>
+            <div className="pb-4 d-flex align-items-center justify-content-between pb-2">
+              <div className="d-flex">
+                <h6 className="text-bold pr-2">{item.name}</h6>
+                <span className="pr-2">
+                  /
+                </span>
                 <span>
                   {item.issuedBy}
                 </span>

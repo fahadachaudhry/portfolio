@@ -1,11 +1,10 @@
 const mainColors = {
-  primary: '#6952C4',
-  secondary: '#584A8F',
-  light: '#FFFFFF',
-  dark: '#373442',
-  selection: '#FFDC00',
+  primary: '#EA2E49',
+  selection: '#F6F792',
+  dark: '#333745',
   lightGray: '#f0f0f0',
   gray: '#808080',
+  light: '#FFFFFF',
 };
 
 const lightThemeColors = {

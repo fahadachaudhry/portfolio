@@ -5,10 +5,10 @@
 .background-color-primary { background-color: var(--primary); }
 .background-color-hover-primary {  &:hover{ background-color: var(--primary); } }
 
-.color-secondary { color: var(--secondary); }
-.color-hover-secondary { &:hover{ color: var(--secondary); } }
-.background-color-secondary { background-color: var(--secondary); }
-.background-color-hover-secondary {  &:hover{ background-color: var(--secondary); } }
+.color-secondary { color: var(--primary); }
+.color-hover-secondary { &:hover{ color: var(--primary); } }
+.background-color-secondary { background-color: var(--primary); }
+.background-color-hover-secondary {  &:hover{ background-color: var(--primary); } }
 
 .color-light { color: var(--light); }
 .color-hover-light { &:hover{ color: var(--light); } }
@@ -27,12 +27,50 @@
 
 
 ::-moz-selection {
-  background: var(--selection);
+  background-color: var(--selection);
+  color: var(--selection-color);
 }
 
 ::selection {
-  background: var(--selection);
+  background-color: var(--selection);
+  color: var(--selection-color);
 }
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+  transition: 0.5s all;
+}
+
+.testimonial{
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  background-color: var(--primary);
+  color: var(--light);
+  margin: 0px 20px 20px 0px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+
 
 .height-100vh {
   min-height: 100vh;
@@ -42,7 +80,7 @@ a {
   padding: 4px;
   border-radius: 4px;
   color: var(--light);
-  background-color: var(--secondary);
+  background-color: var(--primary);
   transition: 0.1s all;
   &:hover {
     text-decoration: none;
@@ -62,10 +100,11 @@ a {
 
 .social-link{
   margin: 0px;
+  font-size: 20px;
   color: var(--body-color);
   background-color: transparent;
   &:hover{
-    background-color: dark;
+    background-color: var(--primary);
   }
 }
 
@@ -76,6 +115,10 @@ ul {
 
 .intro {
   font-size: 26px;
+}
+
+.intro-email{
+  display: none;
 }
 
 .main-heading {
@@ -91,8 +134,8 @@ ul {
   li {
     background-color: var(--primary);
     font-size: 12px;
-    margin: 2px;
-    padding: 6px;
+    margin-right: 6px;
+    // padding: 6px;
     border-radius: 4px;
     color: var(--light);
     display: inline;
@@ -107,7 +150,7 @@ ul {
     background-color: var(--primary);
   }
   &.btn-custom-secondary{
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
   &.btn-custom-alternate{
     background-color: var(--alternate);
@@ -174,9 +217,6 @@ ul {
 .scroll-top{
   border: none;
   font-size: 25px;
-  position: fixed;
-  margin-top: -130px;
-  margin-left: -70px;
   background-color: var(--primary);
   color: var(--light);
   border-radius: 4px;
@@ -187,11 +227,20 @@ ul {
 }
 
 .sidebar-nav{
-  margin-left: 50px;
   width: 40px;
+  z-index: 1;
+  &.left{
+    margin-left: 50px;
+    left: 0;
+  }
+  &.right{
+    margin-right: 50px;
+    right: 0;
+  }
 }
 
 .sidebar-nav-content{
+  min-height: 300px;
   font-size: 20px;
   padding: 28px 0px;
   width: 100%;
@@ -200,12 +249,48 @@ ul {
 
 @media screen and (max-width: 1300px) {
   .sidebar-nav-content, .sidebar-nav-ruler {
-    display: none;
+    display: none !important;
+  }
+  .intro-email{
+    display: block;
   }
 }
 .sidebar-nav-ruler{
   background-color: var(--body-color);
-  height: 300px;
+  height: 100px;
   width: 1px;
   margin: 0 auto;
+}
+.sidebar-nav-email{
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  left: 8px;
+  // margin-top: 12px;
+  font-size: 14px;
+  background-color: transparent;
+  &:hover{
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+.background-quote{
+  font-size: 100px;
+  margin: 0px;
+  opacity: 0.1;
+  &.start{
+    margin-top: -80px;
+  }
+  &.end{
+    right: 0;
+    margin-top: -110px;
+  }
+}
+
+.background-text{
+  font-size: 32px;
+  text-align: center;
+}
+.pointer-events-none{
+  pointer-events: none;
 }

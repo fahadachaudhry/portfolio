@@ -1,6 +1,7 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
 import getProfileData from '../data/data';
 
 const Background = () => {
@@ -8,9 +9,12 @@ const Background = () => {
   return (
     <Container className="pt-5 pb-5">
       <Row>
-        <Col md={2} className="main-heading"><h5 className="text-bold">Background</h5></Col>
-        <Col md={10}>
-          {profileData.bio.map((item) => (<p>{item}</p>))}
+        <Col className="height-100vh d-flex align-items-center">
+          <div>
+            <span className="position-absolute background-quote start"><ImQuotesLeft /></span>
+            {profileData.bio.map((item) => (<p className="background-text">{item}</p>))}
+            <span className="position-absolute background-quote end"><ImQuotesRight /></span>
+          </div>
         </Col>
       </Row>
     </Container>

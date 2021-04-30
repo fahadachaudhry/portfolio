@@ -1,31 +1,17 @@
 /* eslint-disable no-use-before-define */
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Particles from 'react-particles-js';
-import { BsArrowUp } from 'react-icons/bs';
 import avatar from '../assets/images/avatar.jpeg';
 import getProfileData from '../data/data';
 import Testimonial from './Testimonial';
-import colorStore from '../utils/theme';
+import colorStore from '../utils/color-constants';
 
 interface IIntroProps{
   isDarkThemeEnabled: boolean;
 }
 
 const Intro = (props:IIntroProps) => {
-  const [showScroll, updateShowScroll] = useState(false);
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.onscroll = () => {
-        if (window.pageYOffset > 0) {
-          updateShowScroll(false);
-        } else {
-          updateShowScroll(true);
-        }
-      };
-    }
-  }, [showScroll]);
-
   const { isDarkThemeEnabled } = props;
   const profileData = getProfileData();
   const themedColors = colorStore.getThemedColors(isDarkThemeEnabled);
@@ -45,7 +31,7 @@ const Intro = (props:IIntroProps) => {
                 },
               },
               number: {
-                value: 30,
+                value: 70,
               },
               size: {
                 value: 3,
@@ -71,7 +57,7 @@ const Intro = (props:IIntroProps) => {
                     <br />
                     {profileData.intro}
                   </p>
-                  <p>
+                  <p className="intro-email">
                     Get in touch
                     {' 📧 '}
                     <a target="_blank" href={`mailto:${profileData.email}`} rel="noreferrer">
@@ -85,21 +71,6 @@ const Intro = (props:IIntroProps) => {
               </Col>
             </Row>
           </Container>
-        </Col>
-      </Row>
-      <Row>
-        <Col className="text-right d-none d-lg-block">
-          <button type="button" className="scroll-top" hidden={showScroll}>
-            <BsArrowUp
-              className="cursor-pointer"
-              onClick={() => {
-                const body = document.querySelector('#root');
-                body?.scrollIntoView({
-                  behavior: 'smooth',
-                });
-              }}
-            />
-          </button>
         </Col>
       </Row>
     </Container>

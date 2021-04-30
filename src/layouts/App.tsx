@@ -9,9 +9,8 @@ import Intro from '../components/intro';
 import Projects from '../components/projects';
 import Skills from '../components/skills';
 import Footer from '../components/footer';
-import colorStore from '../utils/theme';
+import colorStore from '../utils/color-constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/themed-styles.scss';
 import '../styles/styles.scss';
 import SidebarNav from '../components/sidebarNav';
 
@@ -49,7 +48,7 @@ function App() {
           checked={darkTheme}
           checkedIcon={false}
           uncheckedIcon={false}
-          onColor={mainColors.secondary}
+          onColor={mainColors.primary}
           offColor={mainColors.gray}
           onHandleColor={mainColors.light}
           offHandleColor={mainColors.light}
