@@ -13,7 +13,7 @@ const Background = () => {
           <div>
             <span className="position-absolute background-quote start"><ImQuotesLeft /></span>
             {profileData.bio.map((item) => (<p className="background-text">{item}</p>))}
-            <span className="position-absolute background-quote end"><ImQuotesRight /></span>
+            <span className="position-absolute background-quote end pr-3"><ImQuotesRight /></span>
           </div>
         </Col>
       </Row>

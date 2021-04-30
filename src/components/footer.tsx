@@ -10,17 +10,17 @@ const Footer = () => {
   return (
     <Container className="pb-4">
       <Row>
-        <Col lg={12} className="text-bold footer-credits">
-          <p className="text-center">
+        <Col lg={12} className="text-center text-bold footer-credits">
+          <p>
             Designed and Developed by Shahzada Fahad 🤙🏼 2020
-            <a href="https://github.com/fahadachaudhry/portfolio" target="_blank" className="d-inline-block footer-version" rel="noreferrer">
-              <h4 className="d-inline-block pr-2">
-                <GrGithub />
-              </h4>
-              v
-              {packageJSON.version}
-            </a>
           </p>
+          <a href="https://github.com/fahadachaudhry/portfolio" target="_blank" className="d-inline-block footer-version" rel="noreferrer">
+            <h4 className="d-inline-block pr-2">
+              <GrGithub />
+            </h4>
+            v
+            {packageJSON.version}
+          </a>
         </Col>
         <Col lg={12} className="footer-socials align-items-center justify-content-center pb-4">
           <Socials margins={[0, 10, 0, 0]} />
