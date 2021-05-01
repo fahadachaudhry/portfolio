@@ -1,52 +1,66 @@
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Masonry from 'react-masonry-css';
 import getProfileData, { IExperience } from '../data/data';
 
 const Experience = () => {
   const profileData = getProfileData();
+  const [selectedExperience, updateSelectedExperience] = useState(0);
   return (
-    <Container className="pt-5 pb-5">
+    <Container className="height-60vh d-flex align-items-center">
       <Row>
-        <Col md={2} className="main-heading"><h5 className="text-bold">Experience</h5></Col>
-        <Col md={10}>
-          <Masonry
-            breakpointCols={{
-              default: 3,
-              1100: 2,
-              700: 2,
-              500: 1,
-            }}
-            className="my-masonry-grid"
-            columnClassName="my-masonry-grid_column"
-          >
-            {profileData.experiences?.map((item) => (
-              <ExperienceCard cardData={item} />
-            ))}
-          </Masonry>
+        <Col lg={2} className="main-heading"><h5 className="text-bold">Experience</h5></Col>
+        <Col lg={2} className="main-heading">
+          {profileData.experiences?.map((item, index) => (
+            <button
+              type="button"
+              className={`experience-nav-button ${index === selectedExperience ? 'selected' : ''}`}
+              onClick={() => {
+                updateSelectedExperience(index);
+              }}
+            >
+              {item.shortName}
+            </button>
+          ))}
+        </Col>
+        <Col lg={8}>
+          {profileData.experiences?.map((item, index) => (
+            <ExperienceCard cardData={item} isVisible={index === selectedExperience} />
+          ))}
         </Col>
       </Row>
     </Container>
   );
 };
 
-const ExperienceCard = (props:{cardData:IExperience}) => {
-  const { cardData } = props;
+const ExperienceCard = (props:{cardData:IExperience;isVisible:boolean}) => {
+  const { cardData, isVisible } = props;
+  if (!isVisible) {
+    return <></>;
+  }
   return (
-    <div className="p-4">
-      <h6 className="text-bold">{cardData.companyName}</h6>
-      {/* <div>
-      <span>
-        {item.startDate}
-      </span>
-      {' - '}
-      <span>
-        {item.endDate}
-      </span>
-    </div> */}
-      <p className="pb-4">{cardData.position}</p>
-      <p className="m-0">{cardData.summary}</p>
+    <div className="pb-4 pt-3">
+      <h5 className="text-bold d-inline-block mr-1 pb-2">
+        {cardData.position}
+        <span className="color-primary">
+          {' '}
+          @
+          {cardData.shortName}
+        </span>
+      </h5>
+      {cardData.startDate !== ''
+      && (
+        <p>
+          {cardData.startDate}
+          {' '}
+          {cardData.endDate !== '' && ` - ${cardData.endDate}`}
+        </p>
+      )}
+      <ul className="pt-3">
+        <li>
+          {cardData.summary}
+        </li>
+      </ul>
     </div>
   );
 };
