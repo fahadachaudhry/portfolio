@@ -40,7 +40,7 @@ const ExperienceCard = (props:{cardData:IExperience;isVisible:boolean}) => {
   }
   return (
     <div className="pb-4 pt-3">
-      <h5 className="text-bold d-inline-block mr-1 pb-2">
+      <h5 className="text-bold d-inline-block mr-1">
         {cardData.position}
         <span className="color-primary">
           {' '}

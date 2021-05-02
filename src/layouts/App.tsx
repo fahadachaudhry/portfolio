@@ -55,7 +55,9 @@ function App() {
         />
         <h5 className="mr-2 dark-mode-switch-icons"><BiSun /></h5>
       </div>
-      <Intro isDarkThemeEnabled={darkTheme} />
+      <Intro
+        isDarkThemeEnabled={darkTheme}
+      />
       <Background />
       <Certifications />
       <Skills />

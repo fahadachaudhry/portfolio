@@ -270,10 +270,12 @@ ul {
   text-align: left;
   transition: 0.25s all;
   &:hover{
-    background-color: rgba(255,255,255,0.1);
+    color: var(--light);
+    background-color: var(--gray);
   }
   &.selected{
-    background-color: rgba(255,255,255,0.1);
+    color: var(--light);
+    background-color: var(--gray);
     margin-left: 0px;
     border-left: 3px solid var(--primary);
   }
@@ -296,6 +298,9 @@ ul {
     margin: 20px 0px;
     border: none;
     border-bottom: 1px solid var(--gray);
+    &:hover{
+      background-color: rgba(255,255,255,0.1);
+    }
     &.selected{
       background-color: rgba(255,255,255,0.1);
       margin-left: 0px;
