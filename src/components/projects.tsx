@@ -43,7 +43,7 @@ const ProjectCard = (props:{cardData:IProject}) => {
           <h6 className="text-bold pb-2">{cardData.name}</h6>
           {cardData.url !== ''
         && (
-          <a target="_blank" href={cardData.url} className="btn-custom btn-custom-success" rel="noreferrer">
+          <a target="_blank" href={cardData.url} className="btn-custom btn-custom-light" rel="noreferrer">
             Visit
           </a>
         )}

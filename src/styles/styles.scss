@@ -157,11 +157,12 @@ ul {
   &.btn-custom-primary{
     background-color: var(--primary);
   }
-  &.btn-custom-secondary{
-    background-color: var(--primary);
+  &.btn-custom-dark{
+    background-color: var(--dark);
   }
-  &.btn-custom-alternate{
-    background-color: var(--alternate);
+  &.btn-custom-light{
+    color: var(--primary);
+    background-color: var(--light);
   }
 }
 
