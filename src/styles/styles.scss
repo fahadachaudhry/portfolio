@@ -259,7 +259,12 @@ ul {
   display: none;
 }
 
+.experience-description{
+  min-height: 250px;
+}
+
 .experience-nav-button{
+  display: inline-block;
   width: 100%;
   background-color: transparent;
   border: none;
@@ -293,19 +298,18 @@ ul {
   }
 }
 @media screen and (max-width: 992px) {
+  .experience-description{
+    padding-top: 20px;
+  }
   .experience-nav-button{
-    width: auto;
-    margin: 20px 0px;
     border: none;
-    border-bottom: 1px solid var(--gray);
-    &:hover{
-      background-color: rgba(255,255,255,0.1);
-    }
+    border: 1px solid var(--gray);
+    width: auto;
+    margin-left: -1px;
+    margin-top: -1px;
     &.selected{
-      background-color: rgba(255,255,255,0.1);
       margin-left: 0px;
-      border: none;
-      border-bottom: 3px solid var(--primary);
+      border: 1px solid transparent;
     }
   }
 }

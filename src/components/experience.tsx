@@ -23,7 +23,7 @@ const Experience = () => {
             </button>
           ))}
         </Col>
-        <Col lg={8}>
+        <Col lg={8} className="experience-description">
           {profileData.experiences?.map((item, index) => (
             <ExperienceCard cardData={item} isVisible={index === selectedExperience} />
           ))}
