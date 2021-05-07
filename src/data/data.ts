@@ -70,6 +70,7 @@ export interface IProfile{
   experiences?: IExperience[];
   certifications?: ICertification[];
   projects?: IProject[];
+  goodByeText: string;
 }
 
 const profile : IProfile = {
@@ -79,7 +80,7 @@ const profile : IProfile = {
     {
       name: 'Awais Zafar',
       avatar: 'https://media-exp1.licdn.com/dms/image/C5103AQHNewoR5FzCaQ/profile-displayphoto-shrink_400_400/0/1587200960601?e=1623888000&v=beta&t=mquh0pdkolkg1VWbpkIKU2BlskgnfJSyNhTxyowWVU8',
-      quote: 'Learning to crawl, walk, run and fly.',
+      quote: 'BSCS Lahore Garrison University',
     },
     {
       name: 'Umair Zafar',
@@ -99,12 +100,17 @@ const profile : IProfile = {
     {
       name: 'Ahmad Muzzafar',
       avatar: '',
-      quote: 'Learning to crawl, walk, run and fly.',
+      quote: 'Learning to crawl, walk, run and fly',
     },
     {
       name: 'Muhammad Shahzeb',
       avatar: '',
-      quote: 'Learning to crawl, walk, run and fly.',
+      quote: 'Learning to crawl, walk, run and fly',
+    },
+    {
+      name: 'Farhan Ahmad',
+      avatar: '',
+      quote: 'Learning to crawl, walk, run and fly',
     },
   ],
   phone: '+923249496639',
@@ -262,6 +268,7 @@ const profile : IProfile = {
       tags: ['.NET', 'JS', 'CSS', 'HTML'],
     },
   ],
+  goodByeText: 'Although I\'m not actively looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I\'ll try my best to get back to you!',
 };
 
 const getProfileData = () => profile;

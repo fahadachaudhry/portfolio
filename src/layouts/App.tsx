@@ -13,6 +13,7 @@ import colorStore from '../utils/color-constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/styles.scss';
 import SidebarNav from '../components/sidebarNav';
+import WhatNext from '../components/WhatNext';
 
 function App() {
   // This hook defaults to the current mode of the system.
@@ -59,10 +60,11 @@ function App() {
         isDarkThemeEnabled={darkTheme}
       />
       <Background />
+      <Experiences />
       <Certifications />
       <Skills />
       <Projects />
-      <Experiences />
+      <WhatNext />
       <Footer />
     </>
   );
