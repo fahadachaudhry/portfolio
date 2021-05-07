@@ -10,7 +10,8 @@ const mainColors = {
 
 const generatedColors = {
   secondary: Color(mainColors.primary).lighten(0.3).alpha(0.5).toString(),
-  dark: Color(mainColors.primary).darken(0.9).toString(),
+  // dark: Color(mainColors.primary).darken(0.9).toString(),
+  dark: '#121E49',
 };
 
 const lightThemeColors = {
