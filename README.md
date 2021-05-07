@@ -44,14 +44,12 @@ The application is now dark mode enabled. The colors can be set using the follow
 ```javascript
 const lightThemeColors = {
   particles: mainColors.dark,
-  'card-border': '#8080805F',
   'selection-color': mainColors.dark,
   'body-color': mainColors.dark,
   'body-background-color': mainColors.light,
 };
 const darkThemeColors = {
   particles: mainColors.lightGray,
-  'card-border': '#8080805F',
   'selection-color': mainColors.dark,
   'body-color': mainColors.light,
   'body-background-color': mainColors.dark,

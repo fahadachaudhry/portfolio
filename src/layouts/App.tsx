@@ -21,6 +21,7 @@ function App() {
     !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
   );
   const mainColors = colorStore.getMainColors();
+  const getGeneratedColors = colorStore.getGeneratedColors();
   const themedColors = colorStore.getThemedColors(darkTheme);
 
   const populateColorsFromThemes = (colors:any) => {
@@ -34,6 +35,7 @@ function App() {
   useEffect(() => {
     populateColorsFromThemes(mainColors);
     populateColorsFromThemes(themedColors);
+    populateColorsFromThemes(getGeneratedColors);
   }, [darkTheme]);
 
   return (
