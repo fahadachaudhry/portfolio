@@ -25,7 +25,7 @@ So as a frontend developer, why not solve it the way that fits better with what 
 
 ```javascript
 const mainColors = {
-  primary: '#4369FD',
+  primary: '#EA2E49',
   selection: '#FFDCED',
   gray: '#808080',
   light: '#FFFFFF',
