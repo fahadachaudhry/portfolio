@@ -9,12 +9,6 @@
 
 This Portfolio was created using ReactJS and React-Bootstrap.
 
-## Dependencies
-- react
-- react-bootstrap
-- node-sass
-- typescript
-
 ## Getting Started
 1. `npm install`
 2. `npm start`
