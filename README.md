@@ -1,13 +1,17 @@
-![Header](/src/assets/readme-assets/header-1.png?raw=true "Theming Colors")
+<!-- ![Header](/src/assets/readme-assets/header-1.png?raw=true "Theming Colors") -->
+<p align="center">
+  <img style="width: 200px; margin: 0 auto;" src="./src/assets/readme-assets/header-2.svg?raw=true">
+  <br/>
+  <br/>
+  <img src="https://img.shields.io/github/issues/fahadachaudhry/portfolio?style=flat-square">
+  <img src="https://img.shields.io/github/forks/fahadachaudhry/portfolio?style=flat-square">
+  <img src="https://img.shields.io/github/stars/fahadachaudhry/portfolio?style=flat-square">
+</p>
 
-# fahadachaudhry\portfolio 👋🏼
+## Motivation
+I always found myself switching portfolios, tried tons of templates but nothing suited my style. Some lack theming options and others were just too hard to keep updated.
 
-![issues](https://img.shields.io/github/issues/fahadachaudhry/portfolio?style=flat-square)
-![forks](https://img.shields.io/github/forks/fahadachaudhry/portfolio?style=flat-square)
-![stars](https://img.shields.io/github/stars/fahadachaudhry/portfolio?style=flat-square)
-
-
-This Portfolio was created using ReactJS and React-Bootstrap.
+So as a frontend developer, why not solve it the way that fits better with what I am good at?
 
 ## Getting Started
 1. `npm install`
