@@ -25,10 +25,8 @@ So as a frontend developer, why not solve it the way that fits better with what 
 
 ```javascript
 const mainColors = {
-  primary: '#EA2E49',
-  selection: '#F6F792',
-  dark: '#333745',
-  lightGray: '#f0f0f0',
+  primary: '#4369FD',
+  selection: '#FFDCED',
   gray: '#808080',
   light: '#FFFFFF',
 };
@@ -43,16 +41,16 @@ The application is now dark mode enabled. The colors can be set using the follow
 
 ```javascript
 const lightThemeColors = {
-  particles: mainColors.dark,
-  'selection-color': mainColors.dark,
-  'body-color': mainColors.dark,
+  particles: mainColors.primary,
+  'selection-color': generatedColors.dark,
+  'body-color': generatedColors.dark,
   'body-background-color': mainColors.light,
 };
 const darkThemeColors = {
-  particles: mainColors.lightGray,
-  'selection-color': mainColors.dark,
+  particles: mainColors.primary,
+  'selection-color': generatedColors.dark,
   'body-color': mainColors.light,
-  'body-background-color': mainColors.dark,
+  'body-background-color': generatedColors.dark,
 };
 ```
 2. Changing these colors 👆🏼 will reflect in the appropriate mode selected in the application.
