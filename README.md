@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/github/stars/fahadachaudhry/portfolio?style=flat-square">
 </p>
 
-## Motivation
+## My Motivation
 I always found myself switching portfolios, tried tons of templates but nothing suited my style. Some lack theming options and others were just too hard to keep updated.
 
 So as a frontend developer, why not solve it the way that fits better with what I am good at?
@@ -17,7 +17,7 @@ So as a frontend developer, why not solve it the way that fits better with what 
 1. `npm install`
 2. `npm start`
 
-## Theming
+## Easy Theming
 
 ### Steps to modify theme
 
