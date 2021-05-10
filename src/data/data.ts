@@ -213,7 +213,7 @@ const profile : IProfile = {
   projects: [
     {
       name: 'EasyFolio | ReactJS based Portfolio',
-      imageUrl: 'https://raw.githubusercontent.com/fahadachaudhry/portfolio/master/src/assets/readme-assets/header-2.svg',
+      imageUrl: 'https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       companyName: '',
       url: 'https://github.com/fahadachaudhry/portfolio',
       description: [
