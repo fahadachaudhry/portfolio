@@ -229,7 +229,7 @@ const profile : IProfile = {
     },
     {
       name: 'EasyFolio | ReactJS based Portfolio',
-      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      imageUrl: 'https://raw.githubusercontent.com/fahadachaudhry/portfolio/master/src/assets/project-thumbs/portfolio.png',
       companyName: '',
       url: 'https://github.com/fahadachaudhry/portfolio',
       description: [
