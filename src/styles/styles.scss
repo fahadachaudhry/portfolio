@@ -332,6 +332,7 @@ ul {
   font-size: 14px;
   background-color: transparent;
   &:hover{
+    color: var(--body-color);
     background-color: transparent;
     text-decoration: underline;
   }
