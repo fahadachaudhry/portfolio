@@ -212,6 +212,17 @@ const profile : IProfile = {
   ],
   projects: [
     {
+      name: 'EasyFolio | ReactJS based Portfolio',
+      imageUrl: 'https://raw.githubusercontent.com/fahadachaudhry/portfolio/master/src/assets/readme-assets/header-2.svg',
+      companyName: '',
+      url: 'https://github.com/fahadachaudhry/portfolio',
+      description: [
+        'I always found myself switching portfolios, tried tons of templates but nothing suited my style. Some lack theming options and others were just too hard to keep updated.',
+        'So as a frontend developer, why not solve it the way that fits better with what I am good at?',
+      ],
+      tags: ['ReactJS', 'TypeScript', 'SCSS'],
+    },
+    {
       name: 'Red Velvet Cupcake | VSCode Theme',
       imageUrl: 'https://images.unsplash.com/photo-1524135329990-07660cd5bf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80',
       companyName: '',
@@ -226,17 +237,6 @@ const profile : IProfile = {
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.valary',
       description: ['Valary is an immersive Dark Theme for VSCode. Currently available on Microsoft VSCode Marketplace.'],
       tags: ['Yeoman', 'CSS', 'JSON'],
-    },
-    {
-      name: 'EasyFolio | ReactJS based Portfolio',
-      imageUrl: 'https://raw.githubusercontent.com/fahadachaudhry/portfolio/master/src/assets/project-thumbs/portfolio.png',
-      companyName: '',
-      url: 'https://github.com/fahadachaudhry/portfolio',
-      description: [
-        'I always found myself switching portfolios, tried tons of templates but nothing suited my style. Some lack theming options and others were just too hard to keep updated.',
-        'So as a frontend developer, why not solve it the way that fits better with what I am good at?',
-      ],
-      tags: ['ReactJS', 'TypeScript', 'SCSS'],
     },
     {
       name: 'Innovation Projects',
