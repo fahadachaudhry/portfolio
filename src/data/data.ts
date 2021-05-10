@@ -23,17 +23,6 @@ export interface IProject{
   tags: string[];
 }
 
-// export interface IDate{
-//   day: string;
-//   month: string;
-//   year: string;
-// }
-
-// export interface IDateRange{
-//   startDate: IDate;
-//   endDate: IDate;
-// }
-
 export interface IExperience{
   shortName: string;
   companyName: string;
@@ -209,15 +198,6 @@ const profile : IProfile = {
       summary: 'At Trequant, my job was to create the export interface for their Bio-tech prototype - which consisted of a wrist-watch. Also, my job was to make designs for their Social Media Marketing campaign and for their website.',
       website: 'https://www.linkedin.com/company/plan9---pitbs-tech-incubator/',
     },
-    // {
-    //   shortName: 'Geniusity',
-    //   companyName: 'Geniusity',
-    //   endDate: '2014-03-31',
-    //   position: 'Web Development Intern',
-    //   startDate: '2013-09-30',
-    //   summary: 'While working for Geniusity, I learned languages such as HTML, CSS and JavaScript. I also had my Graphics designing training and worked my way towards the field of UI/UX Development.',
-    //   website: 'https://www.linkedin.com/company/geniusity/',
-    // },
   ],
   certifications: [{
     name: 'Front End Libraries',
@@ -246,6 +226,17 @@ const profile : IProfile = {
       url: 'https://marketplace.visualstudio.com/items?itemName=fahadachaudhry.valary',
       description: ['Valary is an immersive Dark Theme for VSCode. Currently available on Microsoft VSCode Marketplace.'],
       tags: ['Yeoman', 'CSS', 'JSON'],
+    },
+    {
+      name: 'EasyFolio | ReactJS based Portfolio',
+      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      companyName: '',
+      url: 'https://github.com/fahadachaudhry/portfolio',
+      description: [
+        'I always found myself switching portfolios, tried tons of templates but nothing suited my style. Some lack theming options and others were just too hard to keep updated.',
+        'So as a frontend developer, why not solve it the way that fits better with what I am good at?',
+      ],
+      tags: ['ReactJS', 'TypeScript', 'SCSS'],
     },
     {
       name: 'Innovation Projects',

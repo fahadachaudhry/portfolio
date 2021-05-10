@@ -57,7 +57,6 @@ const ProjectCard = (props:{cardData:IProject}) => {
               <li>
                 #
                 {tag}
-                {/* {index !== item.tags.length - 1 ? ', ' : ''} */}
               </li>
             ))}
           </ul>
