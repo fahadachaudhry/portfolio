@@ -209,6 +209,16 @@ const profile : IProfile = {
     issuedBy: 'freeCodeCamp',
     verificationURL: 'https://www.freecodecamp.org/certification/fahadachaudhry/javascript-algorithms-and-data-structures',
   },
+  {
+    name: 'Advanced ReactJS',
+    issuedBy: 'CodeCademy',
+    verificationURL: 'https://www.codecademy.com/profiles/fahadachaudhry',
+  },
+  {
+    name: 'Introduction to ReactJS',
+    issuedBy: 'CodeCademy',
+    verificationURL: 'https://www.codecademy.com/profiles/fahadachaudhry',
+  },
   ],
   projects: [
     {
