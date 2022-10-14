@@ -35,11 +35,6 @@ const Intro = (props:IIntroProps) => {
           init={particlesInit}
           loaded={particlesLoaded}
           options={{
-            // background: {
-            //   color: {
-            //     value: '#0d47a1',
-            //   },
-            // },
             fpsLimit: 120,
             interactivity: {
               events: {
@@ -92,7 +87,7 @@ const Intro = (props:IIntroProps) => {
                   enable: true,
                   area: 800,
                 },
-                value: 80,
+                value: 30,
               },
               opacity: {
                 value: 0.3,
